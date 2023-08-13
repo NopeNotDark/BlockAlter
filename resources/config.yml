@@ -1,17 +1,16 @@
+# BlockAlter Configuration
 ---
-version: 1.0.0
-
+# Puts item into inventory after block in blocks field is broken.
 instant-inventory: true
 
 blocks:
-  ancient_debris:
+  stone:
+    # This is the world name you want the replacements to take place in.
     world: world
+    # This will be the block that replaces the first block when mined.
     replace: bedrock
-    drops: [netherite_ingot]
-    duration: 25
-  emerald_ore:
-    world: world
-    replace: bedrock
-    drops: []
-    duration: 10
+    # To use default drops, set this value to be empty ([]), else it will override default drops.
+    drops: [diamond]
+    # Duration is how long it will take for that first block broken to come back.
+    duration: 30
 ...
