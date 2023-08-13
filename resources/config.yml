@@ -1,0 +1,17 @@
+---
+version: 1.0.0
+
+instant-inventory: true
+
+blocks:
+  ancient_debris:
+    world: world
+    replace: bedrock
+    drops: [netherite_ingot]
+    duration: 25
+  emerald_ore:
+    world: world
+    replace: bedrock
+    drops: []
+    duration: 10
+...
